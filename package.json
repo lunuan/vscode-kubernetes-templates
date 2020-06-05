@@ -3,14 +3,15 @@
 	"displayName": "kubernetes templates",
 	"description": "kubernetes templates",
 	"icon": "static/k8s-logo.png",
-	"version": "0.0.1",
+	"license": "MIT",
 	"publisher": "liuhuaxing",
+	"version": "0.0.5",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:lunuan/vscode-kubernetes-templates.git"
 	},
 	"engines": {
-		"vscode": "^1.45.0"
+		"vscode": "^1.31.0"
 	},
 	"categories": [
 		"Other"
@@ -28,7 +29,7 @@
 		],
 		"snippets": [
 			{
-				"language": "helm",
+				"language": "yaml",
 				"path": "./snippets/helm.json"
 			}
 		]
@@ -42,7 +43,7 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.45.0",
+		"@types/vscode": "^1.31.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
