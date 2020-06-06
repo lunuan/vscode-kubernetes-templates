@@ -1,10 +1,7 @@
-# kubernetes-templates README
+# kubernetes-templates
 
 Are you still worried about how to create kubernetes resources? Are you still worried that the resources you created do not meet the requirements?
 Let me help you, kubernetes-templates can help you quickly generate YAML files that define kubernetes resources.
-
-## Features
-
 
 ## Requirements
 - Kubernetes >= 1.15.6
