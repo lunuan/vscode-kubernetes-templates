@@ -6,7 +6,7 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 How to use this extension?
 - Create a YAML file, enter k8s, you will see a list of commonly used kubernetes resources, select the resource object you want to create
 
-![avatar](static/demo.png)
+![avatar](https://dev.azure.com/lunuan/3c4f5318-ec74-49a3-a8c8-0d62fe17fa79/_apis/git/repositories/b104ca6b-2b03-449c-9df7-5bd10576c3aa/items?path=%2Fstatic%2Fdemo.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
 
 ## Requirements
 - Kubernetes >= 1.15.6
