@@ -2,10 +2,12 @@
     "name": "kubernetes-templates",
     "displayName": "kubernetes templates",
     "description": "kubernetes templates",
+    "keywords": ["k8s", "kubernetes", "snippets", "templates"],
     "icon": "static/k8s-logo.png",
     "license": "MIT",
     "publisher": "lunuan",
-    "version": "1.0.0",
+    "maintainers": ["huaxing@lunuan.com.cn"],
+    "version": "1.0.1",
     "repository": {
         "type": "git",
         "url": "https://lunuan@dev.azure.com/lunuan/kubernetes.templates/_git/kubernetes.templates"
@@ -14,7 +16,7 @@
         "vscode": "^1.31.0"
     },
     "categories": [
-        "Other"
+        "Snippets"
     ],
     "activationEvents": [
         "onCommand:kubernetes-templates.helloWorld"
