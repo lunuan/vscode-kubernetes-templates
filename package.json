@@ -7,7 +7,7 @@
     "license": "MIT",
     "publisher": "lunuan",
     "maintainers": ["huaxing@lunuan.com.cn"],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": {
         "type": "git",
         "url": "https://lunuan@dev.azure.com/lunuan/kubernetes.templates/_git/kubernetes.templates"
