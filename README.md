@@ -17,6 +17,9 @@ How to use this extension?
 
 ## Release Notes
 
+### 1.0.4
+-  Modify Deployment.spec.template.spec.ports default value format error
+
 ### 1.0.0
 - Add commonly used kubernetes objects
     - ConfigMap
