@@ -21,6 +21,7 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 - Traefik of Kubernetes (if you want to use it)
 
 ## Known Issues
+- "PersistentVolumeClaim.spec.accessModes" Incorrect type. Expected "array".
 - "Deployment.spec.template.spec.ports" default value format error
 
 ## Release Notes
@@ -38,9 +39,8 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
     - Add ".spec.volumes"
 
 ### 1.0.6
-- Fix "PersistentVolumeClaim.spec.accessModes" default type.
+- Fix "PersistentVolumeClaim.spec.accessModes" type.
     - AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
-    - Incorrect type. Expected "array".
 
 ### 1.0.5
 - Fix "Deployment.spec.template.spec.ports" default value format error
