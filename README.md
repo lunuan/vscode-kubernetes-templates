@@ -25,7 +25,7 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 - "Deployment.spec.template.spec.ports" default value format error
 
 ## Release Notes
-
+[CHANGELOG.MD](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/CHANGELOG.md)
 
 -----------------------------------------------------------------------------------------------------------
 
