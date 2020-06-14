@@ -6,10 +6,10 @@
       "kind: ConfigMap",
       "apiVersion: v1",
       "metadata:",
-      "  name: ${1}",
+      "  name: ${1:CM}",
       "  namespace: ${3:default}",
       "data:",
-      "  ${2}"
+      "  ${2:key}: ${3:value}"
     ]
   },
   "Secret": {
@@ -93,7 +93,8 @@
       "    app: ${1:MYAPP}",
       "spec:",
       "  storageClassName: ${2|rook-ceph-block,rook-ceph-fs|}",
-      "  accessModes: ${3|ReadWriteOnce,ReadWriteMany,ReadOnlyMany|}",
+      "  accessModes:",
+      "  - ${3|ReadWriteOnce,ReadWriteMany,ReadOnlyMany|}",
       "  resources:",
       "    requests:",
       "      storage: ${4:2Gi}"
@@ -270,14 +271,35 @@
       "metadata:",
       "  name: \"${1:MYAPP}\"",
       "  labels:",
-      "    heritage: {{.Release.Service | quote }}",
-      "    release: {{.Release.Name | quote }}",
-      "    chart: \"{{.Chart.Name}}-{{.Chart.Version}}\"",
+      "    app: \"${1:MYAPP}\"",
       "spec:",
-      "  restartPolicy: \"Never\"",
       "  containers:",
       "  - name: ${1:MYAPP}",
-      "    image: \"${2:debian-slim}:${3:latest}\""
+      "    image: \"${2:debian-slim}:${3:latest}\"",
+      "    resources:",
+      "      limits:",
+      "        cpu: 200m",
+      "        memory: 500Mi",
+      "      requests:",
+      "        cpu: 100m",
+      "        memory: 200Mi",
+      "    env:",
+      "    - name: DB_HOST",
+      "      valueFrom:",
+      "        configMapKeyRef:",
+      "          name: MYAPP",
+      "          key: DB_HOST",
+      "    ports:",
+      "    - containerPort:  80",
+      "      name:  http",
+      "    volumeMounts:",
+      "    - name: localtime",
+      "      mountPath: /etc/localtime",
+      "  volumes:",
+      "    - name: localtime",
+      "      hostPath:",
+      "        path: /usr/share/zoneinfo/Asia/Shanghai",
+      "  restartPolicy: Always"
     ]
   },
   "Job": {
