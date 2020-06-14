@@ -10,11 +10,9 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 ![avatar](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/static/demo.png)
 
 ## Features
-This extension only provides automatic completion when creating resource objects.
-
-Please rest assured to use.
-
-Simplicity is the most powerful.
+- This extension only provides automatic completion when creating resource objects.
+- Please rest assured to use.
+- Simplicity is the most powerful.
 
 
 ## Requirements
@@ -45,9 +43,6 @@ Simplicity is the most powerful.
     - CronJob
     - Traefik IngressRoute
     - Traefik Middleware
-
-### 0.0.1
-- Initial release of ...
 
 -----------------------------------------------------------------------------------------------------------
 
