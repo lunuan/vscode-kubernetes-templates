@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.0.8 | 2020.06.17
+- Fix "Deployment"
+    - Remove ".spec.template.spec.imagePullPolicy"
+    - Update ".spec.template.matedata.labels", Change the default label `name` to `app`
+
 ## 1.0.7 | 2020.06.14
 - Update "ConfigMap"
     - add ".metadata.name" default value

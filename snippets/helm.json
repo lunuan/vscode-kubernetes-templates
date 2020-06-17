@@ -123,7 +123,7 @@
       "  template:",
       "    metadata:",
       "      labels:",
-      "        name:  ${1:MYAPP}",
+      "        app:  ${1:MYAPP}",
       "    spec:",
       "      initContainers:",
       "      - name: ${1:MYAPP}",
@@ -174,7 +174,6 @@
       "        - name: localtime",
       "          hostPath:",
       "            path: /usr/share/zoneinfo/Asia/Shanghai",
-      "      imagePullPolicy: Always",
       "      restartPolicy: Always"
     ]
   },
