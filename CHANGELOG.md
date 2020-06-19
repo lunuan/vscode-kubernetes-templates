@@ -1,4 +1,7 @@
 # CHANGELOG
+## 1.0.9 | 2020.06.19
+- Update "Deployment"
+    - Add ".spec.containers.resources"
 
 ## 1.0.8 | 2020.06.17
 - Fix "Deployment"

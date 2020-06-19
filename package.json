@@ -14,7 +14,7 @@
     "maintainers": [
         "huaxing@lunuan.com.cn"
     ],
-    "version": "1.0.8",
+    "version": "1.0.9",
     "repository": {
         "type": "git",
         "url": "https://lunuan@dev.azure.com/lunuan/kubernetes.templates/_git/kubernetes.templates"
