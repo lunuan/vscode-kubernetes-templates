@@ -9,6 +9,9 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 
 ![avatar](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/static/demo.png)
 
+It is strongly recommended that you install the `ms-kubernetes-tools.vscode-kubernetes-tools` plugin, because when you modify the template, `ms-kubernetes-tools.vscode-kubernetes-tools` will give a prompt.
+
+
 ## Features
 - This extension only provides automatic completion when creating resource objects.
 - Please rest assured to use.
