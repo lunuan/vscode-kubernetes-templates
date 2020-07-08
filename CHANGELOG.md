@@ -4,6 +4,8 @@
     - Add ".metadata.namespace"
 - Update "Deployment"
     - Fix ".spec.template.spec.containers.resources.*.memory" default value format error.
+    - Add ".spec.template.spec.initContainers" comment.
+    - Modify ".spec.template.spec.containers.image" default value.
 
 ## 1.0.9 | 2020.06.19
 - Update "Deployment"
