@@ -1,7 +1,7 @@
 {
     "name": "kubernetes-templates",
-    "displayName": "kubernetes templates",
-    "description": "kubernetes templates",
+    "displayName": "Kubernetes Templates",
+    "description": "Kubernetes Templates",
     "keywords": [
         "k8s",
         "kubernetes",
@@ -14,7 +14,7 @@
     "maintainers": [
         "huaxing@lunuan.com.cn"
     ],
-    "version": "1.0.9",
+    "version": "1.0.10",
     "repository": {
         "type": "git",
         "url": "https://lunuan@dev.azure.com/lunuan/kubernetes.templates/_git/kubernetes.templates"
