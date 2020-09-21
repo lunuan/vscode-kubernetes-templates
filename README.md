@@ -21,7 +21,7 @@ It is strongly recommended that you install the `ms-kubernetes-tools.vscode-kube
 ## Requirements
 - Visual Studio Code >= 1.38
 - Kubernetes >= 1.15.6
-- Traefik of Kubernetes (if you want to use it)
+- In order for the Ingress resource to work, the cluster must have an ingress controller running.
 
 ## Known Issues
 - "PersistentVolumeClaim.spec.accessModes" Incorrect type. Expected "array".

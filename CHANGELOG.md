@@ -1,4 +1,10 @@
 # CHANGELOG
+## 1.1.0 | 2020.09.21
+- Add "Ingress"
+- Add "Ingress(TLS)"
+- Remove "IngressRoute(traefik.containo.us/v1alpha1)"
+- Rename "Middleware" to "TraefikMiddleware"
+
 ## 1.0.10 | 2020.07.08
 - Update "Secret、Service、Endpoints、PersistentVolumeClaim、Deployment、StatefulSet、Pod、CronJob"
     - Add ".metadata.namespace"
