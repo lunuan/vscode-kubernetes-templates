@@ -1,4 +1,7 @@
 # CHANGELOG
+## 1.1.0 | 2020.11.11
+- Update "Ingress" apiVersion to "networking.k8s.io/v1"
+
 ## 1.1.0 | 2020.09.21
 - Add "Ingress"
 - Add "Ingress(TLS)"
