@@ -23,9 +23,8 @@ It is strongly recommended that you install the `ms-kubernetes-tools.vscode-kube
 - Kubernetes >= 1.15.6
 - In order for the Ingress resource to work, the cluster must have an ingress controller running.
 
-## Known Issues
-- "PersistentVolumeClaim.spec.accessModes" Incorrect type. Expected "array".
-- "Deployment.spec.template.spec.ports" default value format error
+## Issues 
+[Issues](https://marketplace.visualstudio.com/items?itemName=lunuan.kubernetes-templates&ssr=false#qna)
 
 ## Release Notes
 [CHANGELOG.MD](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/CHANGELOG.md)
