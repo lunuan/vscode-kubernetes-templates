@@ -4,10 +4,11 @@ Are you still worried about how to create kubernetes resources? Are you still wo
 Let me help you, kubernetes-templates can help you quickly generate YAML files that define kubernetes resources.
 
 ## Getting Started
-- Create a YAML file, enter k8s
+- Create a YAML file, enter prefix `k8s` or `kube.`
 - Select the resource object you want to create from the pop-up list
 
 ![avatar](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/static/demo.png)
+![avatar](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/static/demo2.png)
 
 It is strongly recommended that you install the `ms-kubernetes-tools.vscode-kubernetes-tools` plugin, because when you modify the template, `ms-kubernetes-tools.vscode-kubernetes-tools` will give a prompt.
 

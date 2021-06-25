@@ -1,0 +1,29 @@
+{
+    "Service": {
+        "prefix": ["k8sService", "kube.svc", "kube.service"],
+        "description": "KubernetesService",
+        "body": [
+            "apiVersion: v1",
+            "kind: Service",
+            "metadata:",
+            "  name: ${1:MYAPP}",
+            "  namespace: default",
+            "spec:",
+            "  selector:",
+            "    app: ${1:MYAPP}",
+            "  type: ${2|ClusterIP,NodePort,LoadBalancer,ExternalName|}",
+            "  sessionAffinity: ${3|None,ClientIP|}",
+            "  sessionAffinityConfig:",
+            "    clientIP:",
+            "      timeoutSeconds: 10800",
+            "  ports:",
+            "  - name: ${1:MYAPP}",
+            "    protocol: ${4|TCP,UDP|}",
+            "    port: ${5}",
+            "    targetPort: ${6}",
+            "    # If you set the `spec.type` field to `NodePort` and you want a specific port number,",
+            "    # you can specify a value in the `spec.ports[*].nodePort` field.",
+            "    nodePort: ${5}"
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "PersistentVolumeClaim": {
+    "prefix": ["k8sPersistentVolumeClaim", "kube.pvc", "kube.persistent_volume_claim"],
+    "description": "",
+    "body": [
+        "apiVersion: v1",
+        "kind: PersistentVolumeClaim",
+        "metadata:",
+        "  name: ${1:MYAPP}",
+        "  namespace: default",
+        "  labels:",
+        "    app: ${1:MYAPP}",
+        "spec:",
+        "  storageClassName: ${2|rook-ceph-block,rook-ceph-fs|}",
+        "  accessModes:",
+        "  - ${3|ReadWriteOnce,ReadWriteMany,ReadOnlyMany|}",
+        "  resources:",
+        "    requests:",
+        "      storage: ${4:2Gi}"
+        ]
+    }
+}

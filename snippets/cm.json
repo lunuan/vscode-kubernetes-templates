@@ -1,0 +1,15 @@
+{
+    "ConfigMap": {
+        "prefix": ["k8sConfigMap", "kube.cm", "kube.configmap"],
+        "description": "ConfigMap",
+        "body": [
+          "kind: ConfigMap",
+          "apiVersion: v1",
+          "metadata:",
+          "  name: ${1:CM}",
+          "  namespace: ${3:default}",
+          "data:",
+          "  ${2:key}: ${3:value}"
+        ]
+    }
+}

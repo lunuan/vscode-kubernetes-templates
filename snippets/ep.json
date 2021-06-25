@@ -1,0 +1,38 @@
+{
+    "Endpoints": {
+        "prefix": ["k8sEndpoints", "kube.ep", "kube.endpoints"],
+        "description": "Endpoints",
+        "body": [
+            "# When the EndpointController starts, it will detect the endpoints without corresponding services, and delete these endpoints.",
+            "# Create a Services without Selectors",
+            "apiVersion: v1",
+            "kind: Service",
+            "metadata:",
+            "  name: ${1:EndpointsName}",
+            "  namespace: default",
+            "spec:",
+            "  ports:",
+            "    - protocol: TCP",
+            "      port: 80",
+            "      targetPort: 9376",
+            "---",
+            "# Because this Service has no selector, the corresponding Endpoint object is not created automatically.",
+            "# You can manually map the Service to the network address and port where it’s running,",
+            "# by adding an Endpoint object manually:",
+            "apiVersion: v1",
+            "kind: Endpoints",
+            "metadata:",
+            "  name: ${1:EndpointsName}",
+            "  namespace: default",
+            "subsets:",
+            "- addresses:",
+            "  - ip: 10.0.0.1",
+            "  - ip: 10.0.0.2",
+            "  - ip: 10.0.0.3",
+            "  ports:",
+            "  - name: http",
+            "    port: 9376",
+            "    protocol: TCP"
+        ]
+    }
+}

@@ -1,4 +1,10 @@
 # CHANGELOG
+## 1.1.3 | 2021.06.25
+- Update "Service"
+    - add "spec.sessionAffinity"
+- Update "Endpoint"
+    - add Annotation
+
 ## 1.1.2 | 2021.01.26
 - Fix the error of "Ingress" in v1.18+ cluster
     - Each path in an Ingress is required to have a corresponding path type. Paths that do not include an explicit pathType will fail validation. More info: https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types
