@@ -1,4 +1,7 @@
 # CHANGELOG
+## 1.1.4 | 2021.07.13
+- Add "ReplicaSet"
+
 ## 1.1.3 | 2021.06.25
 - Update "Service"
     - add "spec.sessionAffinity"

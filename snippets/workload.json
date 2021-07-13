@@ -41,7 +41,7 @@
         ]
     },
     "Deployment": {
-        "prefix": ["k8sDeploymment", "kube.deploy", "kube.deployment"],
+        "prefix": ["k8sDeployment", "kube.deploy", "kube.deployment"],
         "description": "Deploymment",
         "body": [
             "apiVersion: apps/v1",
@@ -257,6 +257,46 @@
             "            image: busybox",
             "            args: ['/bin/sh', '-c', 'date; echo Hello from the Kubernetes cluster']",
             "          restartPolicy: OnFailure"
+        ]
+    },
+    "ReplicaSet": {
+        "prefix": ["k8sReplicaSet", "kube_rs", "kube_replicaset"],
+        "description": "",
+        "body": [
+            "apiVersion: apps/v1",
+            "kind: ReplicaSet",
+            "metadata:",
+            "  name: ${1:MYAPP}",
+            "  labels:",
+            "    app: ${1:MYAPP}",
+            "spec:",
+            "  # modify replicas according to your case",
+            "  replicas: ${2:3}",
+            "  selector:",
+            "    matchLabels:",
+            "      app: ${1:MYAPP}",
+            "  template:",
+            "    metadata:",
+            "      labels:",
+            "        app: ${1:MYAPP}",
+            "    spec:",
+            "      containers:",
+            "      - name: ${1:MYAPP}",
+            "        image: ${3:nginx/nginx}",
+            "        ports:",
+            "        - name: web",
+            "          containerPort:  80",
+            "          protocol: TCP",
+            "        env:",
+            "        - name: NGX_VERSION",
+            "          value: 1.16.1",
+            "        volumeMounts:",
+            "        - name: localtime",
+            "          mountPath: /etc/localtime",
+            "      volumes:",
+            "        - name: localtime",
+            "          hostPath:",
+            "            path: /usr/share/zoneinfo/Asia/Shanghai"
         ]
     }
 }
