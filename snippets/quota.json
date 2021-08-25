@@ -1,0 +1,22 @@
+{
+    "ResourceQuota": {
+    "prefix": ["k8sResourceQuota", "kube.quota", "kube.resource_quota"],
+    "description": "",
+    "body": [
+        "apiVersion: v1",
+        "kind: ResourceQuota",
+        "metadata:",
+        "  name: ${1:quota-name}",
+        "  namespace: ${2:quota-ns}",
+        "spec:",
+        "  hard:",
+        "    requests.cpu: '1'",
+        "    requests.memory: 1Gi",
+        "    limits.cpu: '2'",
+        "    limits.memory: 2Gi",
+        "    pods: '2'",
+        "    persistentvolumeclaims: '5'",
+        "    requests.storage: 5Gi"
+        ]
+    }
+}

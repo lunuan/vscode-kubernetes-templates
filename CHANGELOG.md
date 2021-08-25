@@ -1,4 +1,7 @@
 # CHANGELOG
+## 1.3.0 | 2021.08.25
+- Add "LimitRange" and "ResourceQuota"
+
 ## 1.1.4 | 2021.07.13
 - Add "ReplicaSet"
 

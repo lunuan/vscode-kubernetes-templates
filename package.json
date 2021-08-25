@@ -17,7 +17,7 @@
         "admin@lunuan.com.cn",
         "huaxing@lunuan.com.cn"
     ],
-    "version": "1.1.4",
+    "version": "1.3.0",
     "repository": {
         "type": "git",
         "url": "https://lunuan@dev.azure.com/lunuan/kubernetes.templates/_git/kubernetes.templates"
@@ -59,6 +59,14 @@
             {
                 "language": "yaml",
                 "path": "./snippets/pvc.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/limit_range.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/quota.json"
             }
         ]
     },
@@ -84,6 +92,6 @@
         "vscode-test": "^1.3.0"
     },
     "dependencies": {
-        "vsce": "^1.95.0"
+        "vsce": "^1.96.1"
     }
 }
