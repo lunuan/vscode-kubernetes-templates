@@ -1,9 +1,10 @@
 # kubernetes-templates
 
-Are you still worried about how to create kubernetes resources? Are you still worried that the resources you created do not meet the requirements?
-Let me help you, kubernetes-templates can help you quickly generate YAML files that define kubernetes resources.
+Are you still worried about how to create Kubernetes resources? Are you still worried that the resources you created do not meet the requirements?
+Let me help you, kubernetes-templates can help you quickly generate YAML files that define Kubernetes resources.
 
 ## Getting Started
+
 - Create a YAML file, enter prefix `k8s` or `kube.`
 - Select the resource object you want to create from the pop-up list
 
@@ -12,23 +13,26 @@ Let me help you, kubernetes-templates can help you quickly generate YAML files t
 
 It is strongly recommended that you install the `ms-kubernetes-tools.vscode-kubernetes-tools` plugin, because when you modify the template, `ms-kubernetes-tools.vscode-kubernetes-tools` will give a prompt.
 
-
 ## Features
+
 - This extension only provides automatic completion when creating resource objects.
 - Please rest assured to use.
 - Simplicity is the most powerful.
 
-
 ## Requirements
+
 - Visual Studio Code >= 1.38
 - Kubernetes >= 1.15.6
 - In order for the Ingress resource to work, the cluster must have an ingress controller running.
 
-## Issues 
-[Issues](https://marketplace.visualstudio.com/items?itemName=lunuan.kubernetes-templates&ssr=false#qna)
+## Issues
+
+- [Issues (Marketplace)](https://marketplace.visualstudio.com/items?itemName=lunuan.kubernetes-templates&ssr=false#qna)
+- [Issues (GitHub)](https://github.com/lunuan/vscode-kubernetes-templates/issues)
 
 ## Release Notes
-[CHANGELOG.MD](https://raw.githubusercontent.com/lunuan/vscode-kubernetes-templates/master/CHANGELOG.md)
+
+See [CHANGELOG.MD](https://github.com/lunuan/vscode-kubernetes-templates/blob/master/CHANGELOG.md)
 
 -----------------------------------------------------------------------------------------------------------
 
