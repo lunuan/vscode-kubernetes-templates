@@ -1,0 +1,19 @@
+{
+    "Namespace": {
+        "prefix": [
+            "k8sNamespace",
+            "kube.ns",
+            "kube.namespace"
+        ],
+        "description": "Kubernetes Namespace",
+        "body": [
+            "apiVersion: v1",
+            "kind: Namespace",
+            "metadata:",
+            "name: ${1:NAME}",
+            "# labels:",
+            "#   environment: production",
+            "#   team: frontend-team"
+        ]
+    }
+}
